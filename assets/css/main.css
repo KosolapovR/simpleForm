@@ -1,0 +1,129 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+
+body {
+    background: #76b852; /* fallback for old browsers */
+    background: -webkit-linear-gradient(right, #6bb8a3, #6bb8a3);
+    background: -moz-linear-gradient(right, #6bb8a3, #6bb8a3);
+    background: -o-linear-gradient(right, #6bb8a3, #6bb8a3);
+    background: linear-gradient(to left, #6bb8a3, #6bb8a3);
+    font-family: "Roboto", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.form-page {
+    position: relative;
+    width: 360px;
+    padding: 8% 0 0;
+    margin: auto;
+}
+
+.successModal{
+    display: none;
+    height: 293px;
+}
+
+.successModal .icon{
+    margin: 20px auto;
+    background: url(../icons/foursquare-check-in.svg);
+    width: 16px;
+    height: 16px;
+    background-size: 16px;
+}
+
+.successModal .text{
+    text-align: center;
+}
+
+.form {
+    position: relative;
+    z-index: 1;
+    background: #FFFFFF;
+    max-width: 360px;
+    margin: 0 auto 100px;
+    padding: 45px;
+    text-align: center;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+form{
+
+}
+
+.form input {
+    font-family: "Roboto", sans-serif;
+    outline: 0;
+    background: #f2f2f2;
+    width: 100%;
+    border: 1px solid transparent;
+    margin: 15px 0 3px;
+    padding: 15px;
+    padding-right: 36px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+.form button {
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    outline: 0;
+    background: #4CAF50;
+    width: 100%;
+    border: 0;
+    padding: 15px;
+    margin-top: 15px;
+    color: #FFFFFF;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.form button:hover, .form button:active, .form button:focus {
+    background: #43A047;
+}
+
+.form button[disabled]{
+    background: gray;
+    cursor: not-allowed;
+}
+
+.form .message {
+    margin: 15px 0 0;
+    color: #b3b3b3;
+    font-size: 12px;
+}
+
+.form .message a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+.errorContainer {
+    position: relative;
+    height: 16px;
+}
+
+.hidden {
+    display: none;
+}
+
+.error {
+    text-align: left;
+    color: red;
+    display: block;
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.form .input-error {
+    border: 1px solid red;
+}
+
+.success{
+    background: url(../icons/foursquare-check-in.svg);
+    width: 16px;
+    height: 16px;
+    background-size: 16px;
+    position: absolute;
+    right: 10px;
+    top: -35px;
+}

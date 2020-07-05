@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+<div class="form-page">
+    <div class="form">
+        <form id="form" name="mainForm" action="/some/php_file.php">
+            <input type="text" name="name" id="nameInput" placeholder="Ф.И.О." required/>
+            <div class="errorContainer">
+                <span id="nameError" class="hidden">Неверный формат Ф.И.О</span>
+                <div class="hidden success"></div>
+            </div>
+            <input type="text" name="email" id="emailInput" placeholder="эл.почта" required/>
+            <div class="errorContainer">
+                <span id="emailError" class="hidden">Неверный формат эл.почты</span>
+                <div class="hidden success"></div>
+            </div>
+            <input type="text" name="phone" id="phoneInput" placeholder="телефон" required/>
+            <div class="errorContainer">
+                <span id="phoneError" class="hidden">Неверный формат телефона</span>
+                <div class="hidden success"></div>
+            </div><button type="submit">Отправить</button>
+        </form>
+        <div class="successModal">
+            <div class="icon"></div>
+            <span class="text">
+            Данные успешно отправлены!
+        </span>
+        </div>
+    </div>
+</div>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
